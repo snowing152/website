@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="list-of-movies">
+	<ul>
+		{% for movie in movies["movies"] %}
+		<li>{{ movie}}</li>
+		{% endfor %}
+	</ul>
+</div>
+
+<div>{{movies["username"]}}</div>
+
+{% endblock %}
